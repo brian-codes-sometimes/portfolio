@@ -1,0 +1,16 @@
+ds-card {
+    display: block;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    padding: 20px;
+    background-color: var(--clr-surface);
+    filter: drop-shadow(3px 3px black);
+    border-radius: 8px;
+    font-family: "Inclusive Sans", serif;
+    font-weight: 400;
+    /* margin-bottom: 30px; */
+    h2 {
+        margin: 0 0 15px 0;
+    }
+}

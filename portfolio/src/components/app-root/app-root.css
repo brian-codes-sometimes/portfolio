@@ -1,0 +1,62 @@
+app-root {
+    display: grid;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    position: relative;
+    width: 100%;
+}
+
+h1 {
+    font-family: var(--display-font);
+    margin: 0;
+    font-size: clamp(6rem, 1vw, 12rem);
+    text-align: center;
+    margin-bottom: 30px;
+}
+main {
+    min-height: 65vh;
+    margin-bottom: 60px;
+}
+
+footer {
+    position: static;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    .popover-trigger {
+        background: white;
+        border: 1px solid black;
+        border-radius: 8px;
+        padding: 5px;
+        color: black;
+        filter: drop-shadow(2px 2px black);
+        transition: all 20ms ease;
+
+        &:hover {
+            background-color: black;
+            color: white;
+        }
+        &:active {
+            filter: none;
+            margin-left: 2px;
+            margin-top: 2px;
+        }
+    }
+}
+
+#disclaimer {
+    position: relative;
+    width: clamp(300px, 500px, 1000px);
+    height: fit-content;
+    padding: 20px;
+}
+
+.lg-photo {
+    width: 80vw;
+}

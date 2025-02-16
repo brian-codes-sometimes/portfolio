@@ -1,0 +1,30 @@
+.photos {
+    img {
+        width: 200px;
+        height: auto;
+        border-radius: var(--border-rad);
+        transition: all 200ms ease;
+
+    }
+}
+
+.img-pop-trigger {
+    background: none;
+    outline: none;
+    border: none;
+    width: 200px;
+    overflow: hidden;
+    object-fit: contain;
+    
+    &:hover {
+        img {
+            /* margin-left: -4px;
+            margin-top: -4px; */
+            width: 300px;
+            margin-left: -50px;
+            object-fit: cover;
+        }
+        /* outline-offset: 2px;
+        outline: 2px solid black; */
+    }
+}

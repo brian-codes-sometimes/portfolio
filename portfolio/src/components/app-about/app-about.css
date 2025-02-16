@@ -1,0 +1,10 @@
+app-about {
+    display: grid;
+    gap: var(--grid-gap);
+    grid-template-rows: repeat(3, minmax(100, 1fr));
+    .halfsies {
+        display: grid;
+        gap: var(--grid-gap);
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

@@ -1,0 +1,27 @@
+ds-popover {
+    div {
+        border: none;
+        background: none;
+    }
+    .overlay {
+        position: fixed;
+        display: block;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #ffffffbb;
+        z-index: 10;
+        backdrop-filter: blur(3px);
+        pointer-events: none;
+    }
+
+    img {
+        position: relative;
+        display: block;
+        width: 80vw;
+        z-index: 100;
+        border: 1px solid var(--clr-border);
+        border-radius: var(--border-rad);
+    }
+}
