@@ -9,7 +9,7 @@ export class AppNav {
   render() {
     return (
       <nav class="top-nav">
-        <span>Brian Kingsbury</span>
+        <p class="name">Brian Kingsbury</p>
         <div class="links">
             <a href="../about">About</a>
             <a href="../work">Work</a>

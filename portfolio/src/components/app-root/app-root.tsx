@@ -8,13 +8,19 @@ import { Route } from "stencil-router-v2";
   shadow: false,
 })
 export class AppRoot {
-
   render() {
+    
+    if (Router.activePath === "/") {
+      curPath = "about";
+    }
+    else {
+      var curPath = Router.activePath.slice(1);
+    }
     return (
       <Host>
           <app-nav></app-nav>
           <header>
-            <h1>{Router.activePath}</h1>
+            <h1>{curPath}</h1>
           </header>
 
           <main>

@@ -1,0 +1,13 @@
+app-experience {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    ul {
+        list-style-position: inside;
+        padding-inline-start: 0;
+        font-weight: 700;
+        li {
+            font-weight: 400;
+        }
+    }
+}
