@@ -8,6 +8,8 @@
     --reg-font: 'Inclusive';
     --grid-gap: 30px;
     --border-rad: 8px;
+    --display-font: 'Intro';
+    --content-font: "Inclusive Sans", serif;
 }
 
 @font-face {
@@ -24,6 +26,7 @@
 
 * {
     box-sizing: border-box;
+    font-family: var(--content-font);
 }
 
 /* .ds-grid {
@@ -47,3 +50,17 @@
         margin: 0 auto;
     }
 } */
+body:has(.who:hover) .name:after {
+    content: "he/him";
+}
+body:has(.what:hover) .name:after {
+    content: "writes code"
+}
+
+body:has(.hobbies:hover) .name:after {
+    content: "also builds things with wood"
+}
+body:has(.interests:hover) .name:after {
+    content: "is not always online"
+}
+

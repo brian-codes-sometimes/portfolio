@@ -8,3 +8,6 @@ app-about {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+.ascii {
+    font-size: 2px;
+}

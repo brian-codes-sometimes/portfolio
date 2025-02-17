@@ -17,6 +17,8 @@ export namespace Components {
     interface AppWork {
     }
     interface DsCard {
+        "head": string;
+        "subhead"?: string;
     }
     interface DsPopover {
         "popId": string;
@@ -87,6 +89,8 @@ declare namespace LocalJSX {
     interface AppWork {
     }
     interface DsCard {
+        "head"?: string;
+        "subhead"?: string;
     }
     interface DsPopover {
         "popId"?: string;

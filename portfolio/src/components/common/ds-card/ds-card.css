@@ -1,5 +1,7 @@
 ds-card {
-    display: block;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
     border-color: black;
     border-width: 1px;
     border-style: solid;
@@ -11,6 +13,12 @@ ds-card {
     font-weight: 400;
     /* margin-bottom: 30px; */
     h2 {
-        margin: 0 0 15px 0;
+        margin: 0;
+    }
+    .subhead {
+        font-family: var(--content-font);
+        font-size: 1rem;
+        color: #666;
+        margin-top: 5px;
     }
 }

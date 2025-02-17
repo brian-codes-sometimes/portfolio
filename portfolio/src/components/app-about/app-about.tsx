@@ -9,26 +9,22 @@ export class AppAbout {
     render() {
         return (
             <Host>
-                <ds-card>
-                    <h2>Who I am</h2>
-                    <p>I am me and we are he and he are the walrus or something. I have a pitbull named Wrigley.</p>
+                <ds-card head="Who I am" class="who">
+                    <p>I am me and we are he and he are the walrus or something. I have a pitbull named Wrigley.</p>  
                 </ds-card>
 
-                <ds-card>
-                    <h2>What I do</h2>
-                    <p>I build design systems and improve web accessibility. I have worked on 3 design systems so far in my career, having built 2 of them from scratch.</p>
+                <ds-card head="What I do" class="what">
+                    <p>I primarily build design systems and improve web accessibility. I have worked on 3 design systems so far in my career, having built 2 of them from scratch. I am a designer's best friend, I will build components to match designs as closely as possible down to the pixel (provided it's accessible).</p>
                 </ds-card>
                 <div class="halfsies">
-                    <ds-card>
-                        <h2>Hobbies</h2>
+                    <ds-card head="Hobbies" class="hobbies">
                         <ul>
                             <li>Woodworking</li>
-                            <li>Something</li>
+                            <li>Bird Watching</li>
                         </ul>
                     </ds-card>
 
-                    <ds-card>
-                        <h2>Interests</h2>
+                    <ds-card head="Interests" class="interests">
                         <ul>
                             <li>Something else</li>
                         </ul>
