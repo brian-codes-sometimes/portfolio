@@ -17,6 +17,7 @@ export namespace Components {
     interface AppWork {
     }
     interface DsCard {
+        "full": boolean;
         "head": string;
         "subhead"?: string;
     }
@@ -89,6 +90,7 @@ declare namespace LocalJSX {
     interface AppWork {
     }
     interface DsCard {
+        "full"?: boolean;
         "head"?: string;
         "subhead"?: string;
     }

@@ -1,13 +1,21 @@
 app-experience {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 30px;
     ul {
+        margin: 0;
         list-style-position: inside;
-        padding-inline-start: 0;
+        padding-inline-start: 15px;
         font-weight: 700;
+        list-style-position: outside;
         li {
             font-weight: 400;
+            margin-bottom: 2px;
+            line-height: 1.5;
         }
+    }
+    h3 {
+        font-size: 1em;
+        margin-bottom: 5px;
     }
 }

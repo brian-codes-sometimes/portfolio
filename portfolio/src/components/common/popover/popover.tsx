@@ -6,14 +6,13 @@ import { Component, h, Host, Prop } from '@stencil/core';
   shadow: false,
 })
 export class DsPopover {
-    @Prop() popId: string;
+  @Prop() popId: string;
 
   render() {
     return (
       <Host>
-        <div id={this.popId} popover="auto">
-            <div class="overlay"></div>
-            <slot></slot>
+        <div id={this.popId} popover="auto" class="pop">
+          <slot></slot>
         </div>
       </Host>
     );

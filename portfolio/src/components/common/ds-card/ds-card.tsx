@@ -6,6 +6,7 @@ import { Component, h, Host, Prop } from '@stencil/core';
   shadow: false,
 })
 export class DsCard {
+  @Prop() full: boolean;
   @Prop() head: string;
   @Prop() subhead?: string;
   render() {

@@ -11,14 +11,30 @@ ds-card {
     border-radius: 8px;
     font-family: "Inclusive Sans", serif;
     font-weight: 400;
-    /* margin-bottom: 30px; */
-    h2 {
-        margin: 0;
+    
+    header {
+        margin-bottom: 15px;
+        h2 {
+            margin: 0;
+        }
+        .subhead {
+            font-size: 1rem;
+            color: #666;
+            margin-top: 5px;
+        }
     }
-    .subhead {
-        font-family: var(--content-font);
-        font-size: 1rem;
-        color: #666;
-        margin-top: 5px;
+    p {
+        max-width: 800px;;
+    }
+    a {
+        color: black;
+        padding-bottom: 1px;
+        width: fit-content;
+
+        /* fix grid width for hover*/
+        &:hover {
+            border-bottom: 1px solid var(--clr-border);
+            padding-bottom: 0;
+        }
     }
 }

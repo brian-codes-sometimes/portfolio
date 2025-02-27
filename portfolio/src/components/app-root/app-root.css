@@ -1,6 +1,6 @@
 app-root {
     display: grid;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -27,15 +27,18 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 5px;
+    font-size: .9em;
 
-    .popover-trigger {
-        background: white;
-        border: 1px solid black;
+    .disclaimer-trigger {
+        background: var(--clr-surface);
+        border: 1px solid var(--clr-border);
         border-radius: 8px;
         padding: 5px;
-        color: black;
-        filter: drop-shadow(2px 2px black);
+        color: var(--clr-text);
+        filter: drop-shadow(2px 2px var(--clr-border));
         transition: all 20ms ease;
+        font-size: .9em;
+    
 
         &:hover {
             background-color: black;
@@ -50,7 +53,6 @@ footer {
 }
 
 #disclaimer {
-    position: relative;
     width: clamp(300px, 500px, 1000px);
     height: fit-content;
     padding: 20px;
