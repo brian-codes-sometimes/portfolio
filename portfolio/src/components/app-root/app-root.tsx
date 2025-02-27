@@ -41,12 +41,14 @@ export class AppRoot {
           </main>
           <footer>
             <p>built by Brian</p>
-            
-            <button class="popover-trigger" popoverTarget='disclaimer'>without AI</button>
-            
+            <button class="disclaimer-trigger" popoverTarget='disclaimer'>without AI</button>
+            <ds-popover popId="disclaimer">
+            <p>This site was made entirely without the help of AI. No AI code was generated and no AI results were searched in the building of this site. While I think there may eventually be a positive use for AI, at the moment I think it is filled with errors, perpetuates bias, and harms the environment.</p>
+
+            </ds-popover>
+{/*             
             <div id="disclaimer" popover="auto">
-              <p>This site was made entirely without the help of AI. No AI code was generated and no AI results were searched in the building of this site. While I think there may eventually be a positive use for AI, at the moment I think it is filled with errors, perpetuates bias, and harms the environment.</p>
-            </div>
+            </div> */}
           </footer>
       </Host>
     );

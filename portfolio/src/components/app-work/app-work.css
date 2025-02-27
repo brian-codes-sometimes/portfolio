@@ -1,10 +1,23 @@
 .photos {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    flex-wrap: wrap;
+    button {
+        width: 200px;
+        height: 125px;
+        overflow: hidden;
+        border: 1px solid var(--clr-border);
+        border-radius: var(--border-rad);
+        cursor: pointer;
+        &:hover {
+            border-width: 2px;
+        }
+    }
     img {
         width: 200px;
         height: auto;
-        border-radius: var(--border-rad);
         transition: all 200ms ease;
-
     }
 }
 
@@ -27,4 +40,10 @@
         /* outline-offset: 2px;
         outline: 2px solid black; */
     }
+}
+
+app-work {
+    display: grid;
+    grid-template-columns: repeat(autofill, 1fr);
+    gap: 30px;
 }

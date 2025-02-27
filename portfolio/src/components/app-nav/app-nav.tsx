@@ -1,4 +1,5 @@
 import { Component, h } from '@stencil/core';
+import { Router } from "../../";
 
 @Component({
   tag: 'app-nav',
@@ -7,16 +8,17 @@ import { Component, h } from '@stencil/core';
 })
 export class AppNav {
   render() {
+    const activePath = Router.activePath;
     return (
       <nav class="top-nav">
-        <p class="name">Brian Kingsbury</p>
+        <p class="me">Brian Kingsbury</p>
         <div class="links">
-            <a href="../about">About</a>
-            <a href="../work">Work</a>
-            <a href="../experience">Experience</a>
-            <button>
+            <a class={{'active': activePath === '/about'}} href="../about">About</a>
+            <a class={{'active': activePath === '/work'}} href="../work">Work</a>
+            <a class={{'active': activePath === '/experience'}} href="../experience">Experience</a>
+            {/* <button>
               <img src="../../assets/settings.svg" alt="settings icon"/>
-            </button>
+            </button> */}
         </div>
       </nav>
     );

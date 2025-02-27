@@ -2,12 +2,65 @@ app-about {
     display: grid;
     gap: var(--grid-gap);
     grid-template-rows: repeat(3, minmax(100, 1fr));
+
     .halfsies {
         display: grid;
         gap: var(--grid-gap);
         grid-template-columns: repeat(2, 1fr);
     }
+    p {
+        line-height: 1.4em;
+    }
 }
-.ascii {
-    font-size: 2px;
+
+.hobbies ul{
+    list-style-type: circle;
+    li:hover {
+        list-style-type: disc;
+    }
+}
+
+.emoji-line {
+    line-height: 28px;
+    vertical-align: middle;
+    margin: 0;
+    & + p {
+        margin-top: 0;
+    }
+}
+
+.contact-list {
+    display: grid;
+    grid-template-columns: 30px max-content;
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 5px;
+    row-gap: 15px;
+    margin-left: 15px;
+    align-items: center;
+
+
+    i {
+        font-size: 24px;
+    }
+
+    a {
+        color: black;
+        padding-bottom: 1px;
+        width: fit-content;
+
+        /* fix grid width for hover*/
+        &:hover {
+            border-bottom: 1px solid var(--clr-border);
+            padding-bottom: 0;
+        }
+    }
+
+}
+
+.status {
+    /* background-color: yellow; */
+    /* outline: 1px solid black; */
+    /* padding: 1px 5px; */
+    /* border-radius: 4px; */
+    text-decoration: underline;
 }
