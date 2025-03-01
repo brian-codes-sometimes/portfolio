@@ -2,7 +2,7 @@
   "name": "portfolio",
   "private": true,
   "version": "0.0.1",
-  "description": "Stencil App Starter",
+  "description": "Brian Kingsbury's portfolio site",
   "scripts": {
     "build": "stencil build",
     "start": "stencil build --dev --watch --serve",
