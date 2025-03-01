@@ -34,7 +34,7 @@ export class AppAbout {
                 </ds-card>
 
                 <ds-card head="What I do" class="what">
-                    <p>I primarily build design systems and improve web accessibility, but have also spent some time doing design. I have worked on 3 design systems so far in my career, having built 2 of them from scratch. I have also been known to dabble in different products, improving the UI, and making some pixel perfect adjustments. I am a designer's best friend, I try to build components to match designs as closely as possible down to the pixel (provided it's accessible).</p>
+                    <p>I primarily build design systems and improve web accessibility, but have also spent some time doing design. I have worked on 3 design systems so far in my career, having built 2 of them from scratch. I have also been known to dabble in different products, improving the UI, and making some pixel perfect adjustments. I am currently interested in web components and the latest and greatest in CSS.</p>
                 </ds-card>
                 <div class="halfsies">
                     <ds-card head="Hobbies & Interests" class="hobbies">
