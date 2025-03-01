@@ -4,6 +4,7 @@
     gap: 15px;
     flex-wrap: wrap;
     button {
+        position: relative;
         width: 200px;
         height: 125px;
         overflow: hidden;
@@ -15,7 +16,10 @@
         }
     }
     img {
-        width: 200px;
+        position: absolute;
+        left: -5px;
+        top: 0;
+        width: 210px;
         height: auto;
         transition: all 200ms ease;
     }
@@ -31,14 +35,10 @@
     
     &:hover {
         img {
-            /* margin-left: -4px;
-            margin-top: -4px; */
             width: 300px;
             margin-left: -50px;
             object-fit: cover;
         }
-        /* outline-offset: 2px;
-        outline: 2px solid black; */
     }
 }
 

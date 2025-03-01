@@ -1,6 +1,6 @@
 ds-popover {
     *::backdrop {
-        background-color: #ffffffbb;
+        background-color: color-mix(in srgb, var(--clr-surface), transparent 20%);
         backdrop-filter: blur(3px);
         pointer-events: none;
     }
@@ -19,7 +19,7 @@ ds-popover {
         background-color: var(--clr-surface);
         border: 1px solid var(--clr-border);
         border-radius: var(--border-rad);
-        padding: 5px;
+        padding: 0;
 
         img {
             width: 80vw;

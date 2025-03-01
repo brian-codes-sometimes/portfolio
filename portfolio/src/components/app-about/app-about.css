@@ -44,7 +44,7 @@ app-about {
     }
 
     a {
-        color: black;
+        color: var(--clr-text);
         padding-bottom: 1px;
         width: fit-content;
 
@@ -58,9 +58,8 @@ app-about {
 }
 
 .status {
-    /* background-color: yellow; */
-    /* outline: 1px solid black; */
-    /* padding: 1px 5px; */
-    /* border-radius: 4px; */
-    text-decoration: underline;
+    background-color: var(--clr-text);
+    color: var(--clr-surface);
+    padding: 1px 5px;
+    white-space: nowrap;
 }

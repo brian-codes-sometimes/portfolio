@@ -74,7 +74,7 @@ export class AppExperience {
           </ul>
         </ds-card>
         <ds-card full>
-          <p>You can also download my <a href="assets/brian_kingsbury_resume.pdf" download>resume</a> if you like.</p>
+          <p>You can also download my <a href="assets/brian_kingsbury_resume.pdf" download="brian_kingsbury_resume.pdf">resume</a> if you like.</p>
         </ds-card>
       </Host >
     );

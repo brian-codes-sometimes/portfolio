@@ -30,17 +30,18 @@ export class AppAbout {
                             {this.emojiList[this.curEmoji]}
                         </button>
                     </p>
-                    <p>I'm Brian Kingsbury (he/him) . I am a user experience developer based in Milwaukee, WI. I am <span class="status">currently looking for my next project!</span> I have also watched way too many episodes of This Old House and I have a pitbull named Wrigley.</p>
+                    <p>I'm Brian Kingsbury (he/him). I am a parent, accessibility advocate, and a user experience developer/ engineer based in Milwaukee, WI. I tend to collect sketchbooks and note apps, I have watched way too many episodes of This Old House, and I have a pitbull named Wrigley. Currently, I am <span class="status">looking for my next project!</span></p>
                 </ds-card>
 
                 <ds-card head="What I do" class="what">
-                    <p>I primarily build design systems and improve web accessibility. I have worked on 3 design systems so far in my career, having built 2 of them from scratch. I have also been known to dabble in different products, improving the UI, and making some pixel perfect adjustments. I am a designer's best friend, I will build components to match designs as closely as possible down to the pixel (provided it's accessible).</p>
+                    <p>I primarily build design systems and improve web accessibility, but have also spent some time doing design. I have worked on 3 design systems so far in my career, having built 2 of them from scratch. I have also been known to dabble in different products, improving the UI, and making some pixel perfect adjustments. I am currently interested in web components and the latest and greatest in CSS.</p>
                 </ds-card>
                 <div class="halfsies">
                     <ds-card head="Hobbies & Interests" class="hobbies">
                         <ul>
                             <li>Woodworking</li>
-                            <li>Bird Watching</li>
+                            <li>Birding</li>
+                            <li>Biking</li>
                             <li>Camping</li>
                             <li>Gaming</li>
                             <li>Reading</li>

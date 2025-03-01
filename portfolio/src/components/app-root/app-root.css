@@ -41,8 +41,8 @@ footer {
     
 
         &:hover {
-            background-color: black;
-            color: white;
+            background-color: var(--clr-text);
+            color: var(--clr-surface);
         }
         &:active {
             filter: none;

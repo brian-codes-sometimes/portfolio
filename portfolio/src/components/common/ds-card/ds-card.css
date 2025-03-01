@@ -2,12 +2,12 @@ ds-card {
     display: flex;
     flex-direction: row;
     gap: 15px;
-    border-color: black;
+    border-color: var(--clr-border);
     border-width: 1px;
     border-style: solid;
     padding: 20px;
     background-color: var(--clr-surface);
-    filter: drop-shadow(3px 3px black);
+    filter: drop-shadow(3px 3px var(--clr-border));
     border-radius: 8px;
     font-family: "Inclusive Sans", serif;
     font-weight: 400;
@@ -27,7 +27,7 @@ ds-card {
         max-width: 800px;;
     }
     a {
-        color: black;
+        color: var(--clr-text);
         padding-bottom: 1px;
         width: fit-content;
 
