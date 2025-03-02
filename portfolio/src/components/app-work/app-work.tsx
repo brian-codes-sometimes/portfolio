@@ -12,7 +12,7 @@ export class AppWork {
     render() {
         return (
             <Host>
-                <ds-card head="Element Design System" subhead="HTML / SCSS / Web Components">
+                <ds-card head="Element Design System" subhead="HTML / SCSS / Web Components / Typescript">
                     <p>
                         Element Design System was a newly created component library built with web components. Web components were chosen to ensure maximum flexibility with a wide variety of products and frameworks being used. The components were packaged up into an NPM package and also had React and Angular packages for use in common products. A full documentation site was also developed to inform developers how to use and install the package and it's components, as well as showcase varying styles, variables, and component examples with code snippets.
                     </p>
@@ -89,7 +89,7 @@ export class AppWork {
                     </ds-popover>
                 </ds-card>
 
-                <ds-card head="Rivet Design System" subhead="HTML / SCSS / Angular">
+                <ds-card head="Rivet Design System" subhead="HTML / SCSS / Angular / Typescript">
                     <p>Rivet was an internal design system and component library built for both designers and developers. It consisted of two parts, one being an NPM package containing all the components and styles for developers to import into their projects, and the other part being the documentation site. The documentation site showcased the components and styles, explained best practices and use cases, and provided examples with implementation standards.</p>
                     <div class="photos">
                         <button popoverTarget='rivet1' class="img-pop-trigger">
@@ -155,7 +155,7 @@ export class AppWork {
                     </ds-popover>
                 </ds-card>
 
-                <ds-card head="Cultivate Yoga MKE" subhead="HTML / SCSS / Angular">
+                <ds-card head="Cultivate Yoga MKE" subhead="HTML / SCSS / Angular / Typescript">
                     <p>A multi-page website showing upcoming events, full descriptions of regular classes, and more info about the style and teacher. Built using Angular to easily repeat classes over time, only needing to add dates to existing classes once they are confirmed. Integrates with Calendly to allow users to book classes from within the site.</p>
 
                     <div class="photos">
@@ -194,7 +194,7 @@ export class AppWork {
                 </ds-card>
 
 
-                <ds-card head="Retro" subhead="HTML / SCSS / React">
+                <ds-card head="Retro" subhead="HTML / SCSS / React / Typescript">
                     <p>An alternate portfolio site inspired by my first childhood computer - using Macintosh OS 7. It was also my first introduction to design through Kid Pix. I mainly use it as a way to learn new and different approaches to with HTML, CSS, & JS by trying mimic the traditional design and functionality of old operating systems.  I'll occasionally add new features and content. <br />For now, it's best viewed in Chrome on a desktop. Screenshots don't do it justice.</p>
                     <div class="photos">
                         <button popoverTarget="retro1" class="img-pop-trigger">

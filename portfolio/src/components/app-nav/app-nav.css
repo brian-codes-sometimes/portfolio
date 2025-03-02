@@ -2,6 +2,7 @@
     position: relative;
     display: flex;
     width: 100%;
+    max-width: 90vw;
     border: 1px solid var(--clr-border);
     background-color: var(--clr-surface);
     padding: 5px 20px;
@@ -61,3 +62,13 @@
 
 }
 
+
+@media (max-width: 500px) {
+    .top-nav {
+        flex-direction: column;
+        gap: 10px;
+        .me {
+            font-size: 1.4em;
+        }
+    }
+}

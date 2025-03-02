@@ -16,9 +16,6 @@ export class AppNav {
             <a class={{'active': activePath === '/about'}} href="/about">About</a>
             <a class={{'active': activePath === '/work'}} href="/work">Work</a>
             <a class={{'active': activePath === '/experience'}} href="/experience">Experience</a>
-            {/* <button>
-              <img src="../../assets/settings.svg" alt="settings icon"/>
-            </button> */}
         </div>
       </nav>
     );
