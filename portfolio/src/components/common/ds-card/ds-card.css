@@ -11,7 +11,7 @@ ds-card {
     border-radius: 8px;
     font-family: "Inclusive Sans", serif;
     font-weight: 400;
-    
+    max-width: 90vw;
     header {
         margin-bottom: 15px;
         h2 {
@@ -24,7 +24,7 @@ ds-card {
         }
     }
     p {
-        max-width: 800px;;
+        max-width: 800px;
     }
     a {
         color: var(--clr-text);

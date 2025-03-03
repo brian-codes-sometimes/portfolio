@@ -75,5 +75,9 @@ body:has(:popover-open) {
     /* prevent scrolling content in background and adjust for no scrollbar */
     padding-right: 15px;
     overflow: hidden;
+    /* prevent immediately opening another image when clicking outside of popover */
+    button.img-pop-trigger {
+        pointer-events: none;
+    }
 }
 
