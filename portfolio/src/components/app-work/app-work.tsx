@@ -17,35 +17,41 @@ export class AppWork {
                         Element Design System was a newly created component library built with web components. Web components were chosen to ensure maximum flexibility with a wide variety of products and frameworks being used. The components were packaged up into an NPM package and also had React and Angular packages for use in common products. A full documentation site was also developed to inform developers how to use and install the package and it's components, as well as showcase varying styles, variables, and component examples with code snippets.
                     </p>
                     <div class="photos">
-                        <button popoverTarget='eds1' class="img-pop-trigger">
+                        <button popoverTarget='eds1' class="img-pop-trigger"
+                            aria-label="Expand this image">
                             <img
                                 src="assets/work/eds/eds-home.png"
                                 alt="Thumbnail of Element Design System landing page"
                             />
                         </button>
-                        <button popoverTarget='eds2' class="img-pop-trigger">
+                        <button popoverTarget='eds2' class="img-pop-trigger"
+                            aria-label="Expand this image">
                             <img
                                 src="assets/work/eds/eds-button.png"
                                 alt="Thumbnail for button component page"
                             />
                         </button>
-                        <button popoverTarget='eds3' class="img-pop-trigger">
+                        <button popoverTarget='eds3' class="img-pop-trigger"
+                            aria-label="Expand this image">
                             <img
                                 src="assets/work/eds/eds-colors.png"
                                 alt="Thumbnail for colors page"
                             />
                         </button>
-                        <button popoverTarget='eds4' class="img-pop-trigger">
+                        <button popoverTarget='eds4' class="img-pop-trigger"
+                            aria-label="Expand this image">
                             <img
                                 src="assets/work/eds/eds-grid.png"
                                 alt="Thumbnail for grid page" />
                         </button>
-                        <button popoverTarget='eds5' class="img-pop-trigger">
+                        <button popoverTarget='eds5' class="img-pop-trigger"
+                            aria-label="Expand this image">
                             <img
                                 src="assets/work/eds/eds-changelog.png"
                                 alt="Thumbnail for changelog page" />
                         </button>
-                        <button popoverTarget='eds6' class="img-pop-trigger">
+                        <button popoverTarget='eds6' class="img-pop-trigger"
+                            aria-label="Expand this image">
                             <img
                                 src="assets/work/eds/eds-tooltip.png"
                                 alt="Thumbnail for tooltip page" />
@@ -92,23 +98,35 @@ export class AppWork {
                 <ds-card head="Rivet Design System" subhead="HTML / SCSS / Angular / Typescript">
                     <p>Rivet was an internal design system and component library built for both designers and developers. It consisted of two parts, one being an NPM package containing all the components and styles for developers to import into their projects, and the other part being the documentation site. The documentation site showcased the components and styles, explained best practices and use cases, and provided examples with implementation standards.</p>
                     <div class="photos">
-                        <button popoverTarget='rivet1' class="img-pop-trigger">
-                            <img src="assets/work/rivet/rivet_1.png" />
+                        <button popoverTarget='rivet1' class="img-pop-trigger"
+                            aria-label="Expand this image">
+                            <img src="assets/work/rivet/rivet_1.png" 
+                            alt="Thumbnail for Rivet Design System landing page"/>
                         </button>
-                        <button popoverTarget='rivet2' class="img-pop-trigger">
-                            <img src="assets/work/rivet/rivet_2.png" />
+                        <button popoverTarget='rivet2' class="img-pop-trigger"
+                            aria-label="Expand this image">
+                            <img src="assets/work/rivet/rivet_2.png" 
+                            alt="Thumbnail for Rivet button components"/>
                         </button>
-                        <button popoverTarget='rivet3' class="img-pop-trigger">
-                            <img src="assets/work/rivet/rivet_3.png" />
+                        <button popoverTarget='rivet3' class="img-pop-trigger"
+                            aria-label="Expand this image">
+                            <img src="assets/work/rivet/rivet_3.png" 
+                            alt="Thumbnail for Rivet color documentation"/>
                         </button>
-                        <button popoverTarget='rivet4' class="img-pop-trigger">
-                            <img src="assets/work/rivet/rivet_4.png" />
+                        <button popoverTarget='rivet4' class="img-pop-trigger"
+                            aria-label="Expand this image">
+                            <img src="assets/work/rivet/rivet_4.png" 
+                            alt="Thumbnail for Rivet icon documentation"/>
                         </button>
-                        <button popoverTarget='rivet5' class="img-pop-trigger">
-                            <img src="assets/work/rivet/rivet_5.png" />
+                        <button popoverTarget='rivet5' class="img-pop-trigger"
+                            aria-label="Expand this image">
+                            <img src="assets/work/rivet/rivet_5.png" 
+                            alt="Thumbnail for Rivet spacing documentation"/>
                         </button>
-                        <button popoverTarget='rivet6' class="img-pop-trigger">
-                            <img src="assets/work/rivet/rivet_6.png" />
+                        <button popoverTarget='rivet6' class="img-pop-trigger"
+                            aria-label="Expand this image">
+                            <img src="assets/work/rivet/rivet_6.png"
+                            alt="Thumbnail for Rivet theming" />
                         </button>
                     </div>
                     <ds-popover popId="rivet1">
@@ -159,14 +177,19 @@ export class AppWork {
                     <p>A multi-page website showing upcoming events, full descriptions of regular classes, and more info about the style and teacher. Built using Angular to easily repeat classes over time, only needing to add dates to existing classes once they are confirmed. Integrates with Calendly to allow users to book classes from within the site.</p>
 
                     <div class="photos">
-                        <button popoverTarget='cym1' class="img-pop-trigger">
-                            <img src="assets/work/cym/cym_1.png" />
+                        <button
+                            popoverTarget='cym1'
+                            class="img-pop-trigger"
+                            aria-label="Expand this image">
+                            <img src="assets/work/cym/cym_1.png" alt="Thumbnail of CYM homepage" />
                         </button>
-                        <button popoverTarget='cym2' class="img-pop-trigger">
-                            <img src="assets/work/cym/cym_2.png" />
+                        <button popoverTarget='cym2' class="img-pop-trigger"
+                            aria-label="Expand this image">
+                            <img src="assets/work/cym/cym_2.png" alt="Thumbnail for CYM classes page" />
                         </button>
-                        <button popoverTarget='cym3' class="img-pop-trigger">
-                            <img src="assets/work/cym/cym_3.png" />
+                        <button popoverTarget='cym3' class="img-pop-trigger"
+                            aria-label="Expand this image">
+                            <img src="assets/work/cym/cym_3.png" alt="Thumbnail for CYM FAQ page"/>
                         </button>
                     </div>
                     <ds-popover popId="cym1">
@@ -186,7 +209,7 @@ export class AppWork {
                         <img
                             src="assets/work/cym/cym_3.png"
                             loading="lazy"
-                            alt="Web page of a full FAQ about yoga and classes offered, with a subtle seedling illustration in the background"/>
+                            alt="Web page of a full FAQ about yoga and classes offered, with a subtle seedling illustration in the background" />
                     </ds-popover>
 
                     <p>Feel free to visit the <a href="www.cultivateyogamke.com" target="_blank">live site</a></p>
@@ -197,8 +220,9 @@ export class AppWork {
                 <ds-card head="Retro" subhead="HTML / SCSS / React / Typescript">
                     <p>An alternate portfolio site inspired by my first childhood computer - using Macintosh OS 7. It was also my first introduction to design through Kid Pix. I mainly use it as a way to learn new and different approaches to with HTML, CSS, & JS by trying mimic the traditional design and functionality of old operating systems.  I'll occasionally add new features and content. <br />For now, it's best viewed in Chrome on a desktop. Screenshots don't do it justice.</p>
                     <div class="photos">
-                        <button popoverTarget="retro1" class="img-pop-trigger">
-                            <img src="assets/work/retro_3.png" />
+                        <button popoverTarget="retro1" class="img-pop-trigger"
+                            aria-label="Expand this image">
+                            <img src="assets/work/retro_3.png" alt="Thumbnail for the main view of a retro themed site"/>
                         </button>
                     </div>
                     <ds-popover popId="retro1">
