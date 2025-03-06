@@ -3,16 +3,28 @@
     flex-direction: row;
     gap: 15px;
     flex-wrap: wrap;
-    button {
+    button.img-pop-trigger {
         position: relative;
+        background: none;
+        outline-color: transparent;
         width: 200px;
         height: 125px;
         overflow: hidden;
+        object-fit: contain;
         border: 1px solid var(--clr-border);
         border-radius: var(--border-rad);
         cursor: pointer;
-        &:hover {
+        &:hover, &:focus {
             border-width: 2px;
+            img {
+                width: 300px;
+                margin-left: -50px;
+                object-fit: cover;
+            }
+        }
+        &:focus-visible {
+            outline: 2px solid blue;
+            outline-offset: 2px;
         }
     }
     img {
@@ -24,24 +36,6 @@
         transition: all 200ms ease;
     }
 }
-
-.img-pop-trigger {
-    background: none;
-    outline: none;
-    border: none;
-    width: 200px;
-    overflow: hidden;
-    object-fit: contain;
-    
-    &:hover {
-        img {
-            width: 300px;
-            margin-left: -50px;
-            object-fit: cover;
-        }
-    }
-}
-
 app-work {
     display: grid;
     grid-template-columns: repeat(autofill, 1fr);

@@ -20,6 +20,9 @@ app-about {
     list-style-type: circle;
     li:hover {
         list-style-type: disc;
+        &::marker {
+            color: var(--clr-link);
+        }
     }
 }
 
@@ -46,18 +49,6 @@ app-about {
         font-size: 24px;
     }
 
-    a {
-        color: var(--clr-text);
-        padding-bottom: 1px;
-        width: fit-content;
-
-        /* fix grid width for hover*/
-        &:hover {
-            border-bottom: 1px solid var(--clr-border);
-            padding-bottom: 0;
-        }
-    }
-
 }
 
 .status {
@@ -65,4 +56,5 @@ app-about {
     color: var(--clr-surface);
     padding: 1px 5px;
     white-space: nowrap;
+    border-radius: 2px;
 }

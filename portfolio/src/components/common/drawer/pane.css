@@ -1,0 +1,120 @@
+
+/* Ugh I don't think this but I also like using color-scheme. Find a better fix */
+html[data-theme="dark"] ds-pane{
+    --border-fix: #f8f7f4;
+}
+
+html[data-theme="light"] ds-pane{
+    --border-fix: #051118;
+}
+
+ds-pane {
+    position: absolute;
+    right: 20px;
+    z-index: 100;
+}
+
+.side-panel {
+    display: none;
+    height: fit-content;
+    width: 150px;
+    margin: 10px 0;
+    border: 1px solid var(--clr-border);
+    border-radius: var(--border-rad);
+    background-color: color-mix(in srgb, var(--clr-surface), transparent 10%);
+    backdrop-filter: blur(3px);
+
+    &.visible {
+        display: block;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    .theme {
+        color: var(--clr-text);
+
+        input,
+        label {
+            display: inline-block;
+
+        }
+    }
+
+    fieldset {
+        border: none;
+    }
+
+    .ds-radio {
+        position: relative;
+        height: 44px;
+        padding: 5px;
+        margin-bottom: 10px;
+        border-radius: 24px;
+
+        input {
+            position: absolute;
+            opacity: 0;
+        }
+
+        label {
+            margin-left: 45px;
+            line-height: 34px;
+            position: relative;
+
+            &:before {
+                position: absolute;
+                left: -45px;
+                display: inline-block;
+                text-align: center;
+                content: "Aa";
+                background-color: var(--clr-surface);
+                color: var(--clr-text);
+                width: 28px;
+                height: 28px;
+                border-radius: 50%;
+                border: 1px solid var(--clr-border);
+                font-weight: 600;
+                line-height: 28px;
+                padding: 2px
+            }
+
+            &:hover {
+                cursor: pointer;
+                font-weight: 600;
+                &:before {
+                    outline: 2px solid var(--border-fix);
+                    outline-offset: 2px;
+                }
+            }
+
+            &.dark:before {
+                color-scheme: dark;
+            }
+
+            &.light:before {
+                color-scheme: light;
+            }
+        }
+
+        input:not(:checked)+label:before {
+            border-color: transparent;
+        }
+
+        &:has(:focus-visible) {
+            outline: 2px solid blue;
+            outline-offset: 2px;
+        }
+
+        input:checked+label {
+            font-weight: 600;
+
+            &:before {
+                content: "\2713";
+                border-width: 2px;
+                font-size: 22px;
+            }
+        }
+    }
+}

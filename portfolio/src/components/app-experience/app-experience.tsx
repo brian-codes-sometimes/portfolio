@@ -29,7 +29,7 @@ export class AppExperience {
           </ul>
           <h3>Accomplishments</h3>
           <ul>
-            <li>Joined internal accessibility group, suggested improvements and shared insights with larger org</li>
+            <li>Joined internal accessibility group, suggested improvements, and shared insights with larger org</li>
             <li>Built up a brand new component library</li>
           </ul>
         </ds-card>
@@ -68,9 +68,10 @@ export class AppExperience {
           </ul>
           <h3>Accomplishments</h3>
           <ul>
+            <li>Presented on design system at a local meetup</li>
             <li>Created an a11y roadmap for company compliance</li>
             <li>Presented to larger org on accessibility best practices</li>
-            <li>Joined DEI group to help improve company standards</li>
+            <li>Joined DEI group to help improve company policies and hiring practices</li>
           </ul>
         </ds-card>
         <ds-card full>
