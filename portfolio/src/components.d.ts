@@ -11,6 +11,7 @@ export namespace Components {
     interface AppExperience {
     }
     interface AppNav {
+        "settingsOpen": boolean;
     }
     interface AppRoot {
     }
@@ -20,6 +21,10 @@ export namespace Components {
         "full": boolean;
         "head": string;
         "subhead"?: string;
+    }
+    interface DsPane {
+        "contrastChoice": boolean;
+        "isOpen": boolean;
     }
     interface DsPopover {
         "popId": string;
@@ -62,6 +67,12 @@ declare global {
         prototype: HTMLDsCardElement;
         new (): HTMLDsCardElement;
     };
+    interface HTMLDsPaneElement extends Components.DsPane, HTMLStencilElement {
+    }
+    var HTMLDsPaneElement: {
+        prototype: HTMLDsPaneElement;
+        new (): HTMLDsPaneElement;
+    };
     interface HTMLDsPopoverElement extends Components.DsPopover, HTMLStencilElement {
     }
     var HTMLDsPopoverElement: {
@@ -75,6 +86,7 @@ declare global {
         "app-root": HTMLAppRootElement;
         "app-work": HTMLAppWorkElement;
         "ds-card": HTMLDsCardElement;
+        "ds-pane": HTMLDsPaneElement;
         "ds-popover": HTMLDsPopoverElement;
     }
 }
@@ -84,6 +96,7 @@ declare namespace LocalJSX {
     interface AppExperience {
     }
     interface AppNav {
+        "settingsOpen"?: boolean;
     }
     interface AppRoot {
     }
@@ -93,6 +106,10 @@ declare namespace LocalJSX {
         "full"?: boolean;
         "head"?: string;
         "subhead"?: string;
+    }
+    interface DsPane {
+        "contrastChoice"?: boolean;
+        "isOpen"?: boolean;
     }
     interface DsPopover {
         "popId"?: string;
@@ -104,6 +121,7 @@ declare namespace LocalJSX {
         "app-root": AppRoot;
         "app-work": AppWork;
         "ds-card": DsCard;
+        "ds-pane": DsPane;
         "ds-popover": DsPopover;
     }
 }
@@ -117,6 +135,7 @@ declare module "@stencil/core" {
             "app-root": LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
             "app-work": LocalJSX.AppWork & JSXBase.HTMLAttributes<HTMLAppWorkElement>;
             "ds-card": LocalJSX.DsCard & JSXBase.HTMLAttributes<HTMLDsCardElement>;
+            "ds-pane": LocalJSX.DsPane & JSXBase.HTMLAttributes<HTMLDsPaneElement>;
             "ds-popover": LocalJSX.DsPopover & JSXBase.HTMLAttributes<HTMLDsPopoverElement>;
         }
     }

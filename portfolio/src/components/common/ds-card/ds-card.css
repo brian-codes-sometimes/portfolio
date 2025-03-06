@@ -19,7 +19,7 @@ ds-card {
         }
         .subhead {
             font-size: 1rem;
-            color: #666;
+            color: var(--clr-text-mid);
             margin-top: 5px;
         }
     }
@@ -27,13 +27,13 @@ ds-card {
         max-width: 800px;
     }
     a {
-        color: var(--clr-text);
+        color: var(--clr-link);
         padding-bottom: 1px;
         width: fit-content;
 
         /* fix grid width for hover*/
         &:hover {
-            border-bottom: 1px solid var(--clr-border);
+            border-bottom: 1px solid var(--clr-link);
             padding-bottom: 0;
         }
     }

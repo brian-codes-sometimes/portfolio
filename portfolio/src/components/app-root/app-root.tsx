@@ -9,7 +9,7 @@ import { Route } from "stencil-router-v2";
 })
 export class AppRoot {
   render() {
-    
+
     if (Router.activePath === "/") {
       curPath = "about";
     }
@@ -18,38 +18,35 @@ export class AppRoot {
     }
     return (
       <Host>
-          <app-nav></app-nav>
-          <header>
-            <h1>{curPath}</h1>
-          </header>
+        <app-nav>
+        </app-nav>
+        <header>
+          <h1>{curPath}</h1>
+        </header>
 
-          <main>
-            <Router.Switch>
-              <Route path="/" to="/about">
-                <app-about></app-about>
-              </Route>
-              <Route path="/about">
-                <app-about></app-about>
-              </Route>
-              <Route path="/work">
-                <app-work></app-work>
-              </Route>
-              <Route path="/experience">
-                <app-experience></app-experience>
-              </Route>
-            </Router.Switch>
-          </main>
-          <footer>
-            <p>built by Brian</p>
-            <button class="disclaimer-trigger" popoverTarget='disclaimer'>without AI</button>
-            <ds-popover popId="disclaimer">
+        <main>
+          <Router.Switch>
+            <Route path="/" to="/about">
+              <app-about></app-about>
+            </Route>
+            <Route path="/about">
+              <app-about></app-about>
+            </Route>
+            <Route path="/work">
+              <app-work></app-work>
+            </Route>
+            <Route path="/experience">
+              <app-experience></app-experience>
+            </Route>
+          </Router.Switch>
+        </main>
+        <footer>
+          <p>built by Brian</p>
+          <button class="disclaimer-trigger" popoverTarget='disclaimer'>without AI</button>
+          <ds-popover popId="disclaimer">
             <p>This site was made entirely without the help of AI. No AI code was generated and no AI results were searched in the building of this site. While I think there may eventually be a positive use for AI, at the moment I think it is filled with errors, perpetuates harmful bias, and contributes to global warming.</p>
-
-            </ds-popover>
-{/*             
-            <div id="disclaimer" popover="auto">
-            </div> */}
-          </footer>
+          </ds-popover>
+        </footer>
       </Host>
     );
   }

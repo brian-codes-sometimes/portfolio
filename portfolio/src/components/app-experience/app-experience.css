@@ -4,14 +4,20 @@ app-experience {
     gap: 30px;
     ul {
         margin: 0;
-        list-style-position: inside;
         padding-inline-start: 15px;
         font-weight: 700;
         list-style-position: outside;
+        list-style-type: circle;
         li {
             font-weight: 400;
             margin-bottom: 2px;
             line-height: 1.5;
+            &:hover {
+                list-style-type: disc;
+                &::marker {
+                    color: var(--clr-link);
+                }
+            }
         }
     }
     h3 {
