@@ -13,10 +13,12 @@ export class DsCard {
     return (
       <Host>
         <article>
-          <header>
-            <h2>{this.head}</h2>
-            {this.subhead ? <p class="subhead">{this.subhead}</p> : null}
-          </header>
+          {this.head ?
+            <header>
+              <h2>{this.head}</h2>
+              {this.subhead ? <p class="subhead">{this.subhead}</p> : null}
+            </header>
+            : null}
           <slot></slot>
         </article>
       </Host>
