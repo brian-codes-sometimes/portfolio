@@ -14,7 +14,7 @@ export class AppWork {
             <Host>
                 <ds-card head="Element Design System" subhead="HTML / SCSS / Web Components / Typescript">
                     <p>
-                        Element Design System was a newly created component library built with web components. Web components were chosen to ensure maximum flexibility with a wide variety of products and frameworks being used. The components were packaged up into an NPM package and also had React and Angular packages for use in common products. A full documentation site was also developed to inform developers how to use and install the package and it's components, as well as showcase varying styles, variables, and component examples with code snippets.
+                        Element Design System was a newly created component library built with web components. Web components were chosen to ensure maximum flexibility with a wide variety of products and frameworks being used. The components were packaged up into an NPM package and also had React and Angular packages for use in common products. A full documentation site was also developed to inform developers how to use and install the package and it's components, as well as showcase varying styles, variables, and component examples with code snippets. StencilJS was used for compiling the Web Components as well as generating the documentation site.
                     </p>
                     <div class="photos">
                         <button popoverTarget='eds1' class="img-pop-trigger"
