@@ -1,5 +1,5 @@
 /* Emoji Font */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Emoji:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Emoji:wght@300..700');
 
 @import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans:wght@300..700&display=swap');
 
@@ -13,6 +13,7 @@
     --clr-surface: light-dark(#f8f7f4, #051118);
     --clr-text: light-dark(#051118, #f8f7f4);
     --clr-text-mid: color-mix(in srgb, var(--clr-text), transparent 20%);
+    --clr-text-barely: color-mix(in srgb, var(--clr-text), transparent 95%);
     --clr-border: var(--clr-text);
     --clr-link: var(--clr-text);
     --clr-icon: var(--clr-text);
@@ -95,6 +96,7 @@ button.emoji {
     padding: 0;
     color: var(--clr-text);
     font-family: "Noto Emoji";
+    font-display: block;
     font-size: 24px;
 }
 

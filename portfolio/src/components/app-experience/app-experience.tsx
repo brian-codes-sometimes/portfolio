@@ -92,6 +92,7 @@ export class AppExperience {
             <li>Joined DEI group to help improve company policies and hiring practices</li>
           </ul>
         </ds-card>
+        <ds-card class="spacer"></ds-card>
         <ds-card class="full" head="Education" subhead="University of Wisconsin - Milwaukee">
           <h3>Bachelor of Fine Arts - Design and Visual Communication</h3>
           {/* <h4>University of Wisconsin - Milwaukee</h4> */}
