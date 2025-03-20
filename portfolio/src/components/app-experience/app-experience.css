@@ -48,3 +48,8 @@ app-experience {
         }
     }
 }
+@media (max-width: 899px) {
+    ds-card.spacer {
+        display: none;
+    }
+}

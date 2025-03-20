@@ -12,20 +12,25 @@ ds-card {
     font-family: "Inclusive Sans", serif;
     font-weight: 400;
     max-width: 90vw;
+
     header {
         margin-bottom: 15px;
+
         h2 {
             margin: 0;
         }
+
         .subhead {
             font-size: 1rem;
             color: var(--clr-text-mid);
             margin-top: 5px;
         }
     }
+
     p {
         max-width: 800px;
     }
+
     a:not(.icon) {
         color: var(--clr-link);
         padding-bottom: 1px;
@@ -36,5 +41,15 @@ ds-card {
             border-bottom: 1px solid var(--clr-link);
             padding-bottom: 0;
         }
+    }
+
+    &.spacer {
+        filter: none;
+        border: none;
+        background: repeating-linear-gradient(-45deg,
+                var(--clr-text-barely),
+                var(--clr-text-barely) 2px,
+                var(--clr-surface) 2px,
+                var(--clr-surface) 30px);
     }
 }

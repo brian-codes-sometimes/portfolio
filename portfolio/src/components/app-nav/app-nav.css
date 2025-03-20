@@ -7,8 +7,6 @@ app-nav {
 .top-nav {
     position: relative;
     display: flex;
-    /* width: 100%;
-    max-width: 90vw; */
     border: 1px solid var(--clr-border);
     background-color: var(--clr-surface);
     padding: 5px 20px;
@@ -38,6 +36,7 @@ app-nav {
         display: flex;
         gap: 10px;
         line-height: 30px;
+        align-items: center;
 
         a {
             font-family: "Inclusive Sans", serif;
@@ -67,14 +66,16 @@ app-nav {
             padding: 0;
             height: 34px;
             width: 34px;
-            svg {
-                height: 34px;
-                width: 34px;
+            background-color: var(--clr-surface);
+            i:before {
+                font-size: 24px;
             }
-
+            i.lni-sun-1 {
+                margin-top: 2px;
+                margin-left: 1px;
+            }
             &:hover {
                 outline: 2px solid var(--clr-border);
-
             }
         }
     }
