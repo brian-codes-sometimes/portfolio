@@ -11,7 +11,6 @@ export namespace Components {
     interface AppExperience {
     }
     interface AppNav {
-        "settingsOpen": boolean;
     }
     interface AppRoot {
     }
@@ -96,7 +95,6 @@ declare namespace LocalJSX {
     interface AppExperience {
     }
     interface AppNav {
-        "settingsOpen"?: boolean;
     }
     interface AppRoot {
     }
