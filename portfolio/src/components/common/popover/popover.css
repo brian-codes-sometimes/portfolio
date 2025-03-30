@@ -30,7 +30,7 @@ ds-popover {
         }
     }
 
-    @media (max-width: 500px) {
+    @media (max-width: 530px) {
            .pop {
             max-width: 98vw;
             img {
