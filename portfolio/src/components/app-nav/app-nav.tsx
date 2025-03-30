@@ -10,11 +10,8 @@ getAssetPath('assets/*');
   shadow: false,
 })
 export class AppNav {
-  // @Prop({ mutable: true }) settingsOpen: boolean = false;
-  // @Prop({ mutable: true }) isOpen: boolean;
   @State() isLightMode: boolean;
   @State() themeChoice: string;
-  // @Prop({ mutable: true }) contrastChoice: boolean;
 
 
   toggleMode() {
@@ -38,7 +35,6 @@ export class AppNav {
     var currentTheme = localStorage.getItem('theme');
     /* Set theme to stored theme if it exists */
     if (currentTheme) {
-      console.log('im themed', currentTheme);
       this.themeChoice = currentTheme;
       if (this.themeChoice === "light") {
         this.isLightMode = true;
@@ -49,15 +45,12 @@ export class AppNav {
       document.documentElement.setAttribute('data-theme', currentTheme);
     }
     else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      console.log('im dark');
       this.isLightMode = false;
       document.documentElement.setAttribute('data-theme', "dark");
     }
     else {
-      console.log('im light');
       this.isLightMode = true;
       document.documentElement.setAttribute('data-theme', "light");
-
     }
 
   }
@@ -73,7 +66,7 @@ export class AppNav {
             <a class={{ 'active': activePath === '/work' }} href="/work">Work</a>
             <a class={{ 'active': activePath === '/experience' }} href="/experience">Experience</a>
             <button 
-            class={this.isLightMode ? "settings light" : "settings dark"} 
+            class="settings" 
             onClick={() => this.toggleMode()}
             aria-label={this.isLightMode ? "Switch to dark mode" : "Switch to light mode"}>
               {this.isLightMode ?

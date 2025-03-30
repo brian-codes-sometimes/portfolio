@@ -83,6 +83,7 @@ app-nav {
 }
 
 
+
 @media (max-width: 500px) {
     .top-nav {
         flex-direction: column;
@@ -96,5 +97,11 @@ app-nav {
 @media (max-width: 900px) {
     .me:after {
         display: none;
+    }
+}
+
+@media(max-width: 375px) {
+    .top-nav {
+        padding: 5px;
     }
 }
