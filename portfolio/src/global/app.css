@@ -69,6 +69,61 @@ html[data-theme="dark"] {
 body {
     background-color: var(--clr-surface);
     overflow-x: hidden;
+
+    &.rainbow {
+        ul li {
+            &:nth-child(1)::marker {
+                color: #FF0000;
+            }
+
+            &:nth-child(2)::marker {
+                color: #FF8E00;
+            }
+
+            &:nth-child(3)::marker {
+                color: #FFFF00;
+            }
+
+            &:nth-child(4)::marker {
+                color: #008E00;
+            }
+
+            &:nth-child(5)::marker {
+                color: #400098;
+            }
+
+            &:nth-child(6)::marker {
+                color: #8E008E;
+            }
+
+            &:nth-child(7)::marker {
+                color: #FFAFC8;
+            }
+
+            &:nth-child(8)::marker {
+                color: #74D7EE;
+            }
+
+            &:nth-child(9)::marker {
+                color: #613915;
+            }
+
+            &:nth-child(10)::marker {
+                color: #000;
+            }
+        }
+
+        .rainbow-check label {
+            mix-blend-mode: normal;
+        }
+
+        .spacer {
+            opacity: 0.5;
+            background-image: linear-gradient(135deg, #ff0000 0.76%, var(--clr-surface) 0.76%, var(--clr-surface) 8.33%, #ff8e00 8.33%, #ff8e00 9.09%, var(--clr-surface) 9.09%, var(--clr-surface) 16.67%, #ffff00 16.67%, #ffff00 17.42%, var(--clr-surface) 17.42%, var(--clr-surface) 25%, #008e00 25%, #008e00 25.76%, var(--clr-surface) 25.76%, var(--clr-surface) 33.33%, #400098 33.33%, #400098 34.09%, var(--clr-surface) 34.09%, var(--clr-surface) 41.67%, #8e008e 41.67%, #8e008e 42.42%, var(--clr-surface) 42.42%, var(--clr-surface) 50%, #ff0000 50%, #ff0000 50.76%, var(--clr-surface) 50.76%, var(--clr-surface) 58.33%, #ff8e00 58.33%, #ff8e00 59.09%, var(--clr-surface) 59.09%, var(--clr-surface) 66.67%, #ffff00 66.67%, #ffff00 67.42%, var(--clr-surface) 67.42%, var(--clr-surface) 75%, #008e00 75%, #008e00 75.76%, var(--clr-surface) 75.76%, var(--clr-surface) 83.33%, #400098 83.33%, #400098 84.09%, var(--clr-surface) 84.09%, var(--clr-surface) 91.67%, #8e008e 91.67%, #8e008e 92.42%, var(--clr-surface) 92.42%, var(--clr-surface) 100%);
+            background-size: 330.00px 330.00px;
+        }
+    }
+
 }
 
 p {
@@ -125,4 +180,9 @@ body:has(:popover-open) {
     button.img-pop-trigger {
         pointer-events: none;
     }
+}
+
+.sr-only {
+    visibility: hidden;
+    position: absolute;
 }

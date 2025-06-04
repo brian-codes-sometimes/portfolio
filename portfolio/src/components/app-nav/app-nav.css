@@ -58,6 +58,10 @@ app-nav {
 
         }
 
+        .extra-settings {
+            display: flex;
+        }
+
         button.settings {
             background: transparent;
             border: none;
@@ -74,9 +78,29 @@ app-nav {
                 margin-top: 2px;
                 margin-left: 1px;
             }
-            &:hover {
+            &:hover, &:focus {
                 outline: 2px solid var(--clr-border);
             }
+        }
+    }
+
+    .rainbow-check {
+        label {
+            display: block;
+            height: 34px;
+            width: 34px;
+            font-size: 20px;
+            line-height: 34px;
+            border-radius: 50%;
+            text-align: center;
+            mix-blend-mode: luminosity;
+            &:hover, &:focus {
+                outline: 2px solid var(--clr-border);
+            }
+        }
+        input {
+            position: absolute;
+            visibility: hidden;
         }
     }
 
@@ -103,5 +127,14 @@ app-nav {
 @media(max-width: 375px) {
     .top-nav {
         padding: 5px;
+        .links {
+            gap: 5px;
+        }
     }
 }
+
+@media(max-width: 360px) {
+    .top-nav .links {
+        flex-direction: column;
+    }
+ }

@@ -21,6 +21,7 @@ h1 {
     @media(max-width: 400px) {
         font-size: 2.8em;
     }
+    
 }
 main {
     min-height: 65vh;
@@ -30,13 +31,20 @@ main {
 
 footer {
     position: static;
-    bottom: 10px;
+    flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
+    bottom: 10px;
     gap: 5px;
     font-size: .9em;
     padding-bottom: 10px;
+
+    .disclaim {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
 
     .disclaimer-trigger {
         background: var(--clr-surface);
@@ -58,6 +66,10 @@ footer {
             margin-left: 2px;
             margin-top: 2px;
         }
+    }
+    .copy {
+        color: var(--clr-text-mid);
+        font-size: 12px;
     }
 }
 

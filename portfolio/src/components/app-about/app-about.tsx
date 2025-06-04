@@ -30,7 +30,7 @@ export class AppAbout {
                             {this.emojiList[this.curEmoji]}
                         </button>
                     </p>
-                    <p>I'm Brian Kingsbury (he/him). I am a parent, accessibility advocate, and a user experience developer/ engineer based in Milwaukee, WI. I tend to collect sketchbooks and note apps, I have watched way too many episodes of This Old House, and I have a pitbull named Wrigley. Currently, I am <span class="status">looking for my next project!</span></p>
+                    <p>I'm Brian Kingsbury (he/him). I am a parent, a UI/UX developer, and an accessibility advocate based in Milwaukee, WI. I tend to collect sketchbooks and note apps, I have watched way too many episodes of This Old House, and I have a pitbull named Wrigley. Currently, I am <span class="status">looking for my next project!</span></p>
                 </ds-card>
 
                 <ds-card head="What I do" class="what">
@@ -45,7 +45,7 @@ export class AppAbout {
                             <li>Camping</li>
                             <li>Gaming</li>
                             <li>Reading</li>
-                            <li>Rebuilding portfolio sites</li>
+                            <li>Rebuilding my website</li>
                         </ul>
                     </ds-card>
 

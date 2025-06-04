@@ -100,7 +100,8 @@ export class AppExperience {
         <ds-card class="full download">
           <p>You can also download my <a href="assets/brian_kingsbury_resume.pdf" download="brian_kingsbury_resume.pdf">resume</a> if you like.</p>
 
-          <a class="icon" href="assets/brian_kingsbury_resume.pdf" download="brian_kingsbury_resume.pdf"><i class="lni lni-download-1"></i></a>
+          <a class="icon" href="assets/brian_kingsbury_resume.pdf" download="brian_kingsbury_resume.pdf"><i class="lni lni-download-1"></i>
+          <span class="sr-only">Download resume</span></a>
         </ds-card>
       </Host >
     );

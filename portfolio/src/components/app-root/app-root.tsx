@@ -41,10 +41,13 @@ export class AppRoot {
           </Router.Switch>
         </main>
         <footer>
-          <p>built by Brian</p>
-          <button class="disclaimer-trigger" popoverTarget='disclaimer'>without AI</button>
+          <div class="disclaim">
+            <p>built by Brian</p>
+            <button class="disclaimer-trigger" popoverTarget='disclaimer'>without AI</button>
+          </div>
+          <p class="copy">© Copyright - Brian Kingsbury 2025</p>
           <ds-popover popId="disclaimer">
-            <p>This site was made entirely without the help of AI. No AI code was generated and no AI results were searched in the building of this site. While I think there may eventually be a positive use for AI, at the moment I think it is filled with errors, perpetuates harmful bias, and contributes to global warming.</p>
+            <p>This site was made entirely without the help of AI. No AI code was generated and no AI results were searched in the building of this site. While there may eventually be a positive use for AI, at the moment it is filled with errors, uses stolen work, perpetuates harmful bias, and contributes to global warming.</p>
           </ds-popover>
         </footer>
       </Host>
