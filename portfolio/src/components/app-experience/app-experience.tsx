@@ -1,7 +1,7 @@
 import { Component, h, Host } from '@stencil/core';
 import { getAssetPath } from '@stencil/core';
 
-getAssetPath('assets/experience/*');
+getAssetPath('assets/experience/brian_kingsbury_resume.pdf');
 
 @Component({
   tag: 'app-experience',
@@ -95,12 +95,11 @@ export class AppExperience {
         <ds-card class="spacer"></ds-card>
         <ds-card class="full" head="Education" subhead="University of Wisconsin - Milwaukee">
           <h3>Bachelor of Fine Arts - Design and Visual Communication</h3>
-          {/* <h4>University of Wisconsin - Milwaukee</h4> */}
         </ds-card>
         <ds-card class="full download">
-          <p>You can also download my <a href="assets/brian_kingsbury_resume.pdf" download="brian_kingsbury_resume.pdf">resume</a> if you like.</p>
+          <p>You can also download my <a href="assets/experience/brian_kingsbury_resume.pdf" download="brian_kingsbury_resume.pdf">resume</a> if you like.</p>
 
-          <a class="icon" href="assets/brian_kingsbury_resume.pdf" download="brian_kingsbury_resume.pdf"><i class="lni lni-download-1"></i>
+          <a class="icon" href="assets/experience/brian_kingsbury_resume.pdf" download="brian_kingsbury_resume.pdf"><i class="lni lni-download-1"></i>
           <span class="sr-only">Download resume</span></a>
         </ds-card>
       </Host >
