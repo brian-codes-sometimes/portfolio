@@ -188,6 +188,10 @@ body:has(.contact:hover) .me:after {
     content: "wants to connect";
 }
 
+body:has(.status:hover) .me:after {
+    content: "would like 1 job please";
+}
+
 body:has(:popover-open) {
     /* prevent scrolling content in background and adjust for no scrollbar */
     padding-right: 15px;
