@@ -30,7 +30,7 @@ export class AppAbout {
                             {this.emojiList[this.curEmoji]}
                         </button>
                     </p>
-                    <p>I'm Brian Kingsbury (he/him). I am a parent, a UI/UX developer, and an accessibility advocate based in Milwaukee, WI. I tend to collect sketchbooks and note apps, I have watched way too many episodes of This Old House, and am in the process of making various improvements to our 1905 house. Currently, I am <span class="status">looking for my next career opportunity!</span></p>
+                    <p>I'm Brian Kingsbury (he/him). I am a parent, a UI/UX developer, and an accessibility advocate based in the Midwest. I tend to collect sketchbooks and note apps, I have watched way too many episodes of This Old House, and am in the process of making various improvements to our 1905 house. Currently, I am working on building pointless little websites and also am <span class="status">looking for my next career opportunity!</span></p>
                 </ds-card>
 
                 <ds-card head="What I do" class="what">
