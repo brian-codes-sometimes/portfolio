@@ -45,7 +45,7 @@ export class AppRoot {
             <p>built by Brian</p>
             <button class="disclaimer-trigger" popoverTarget='disclaimer'>without AI</button>
           </div>
-          <p class="copy">© Copyright - Brian Kingsbury 2025</p>
+          <p class="copy">© Copyright - Brian Kingsbury 2026</p>
           <ds-popover popId="disclaimer">
             <p>This site was made entirely without the help of AI. No AI code was generated and no AI results were searched in the building of this site. While there may eventually be a positive use for AI, at the moment it is filled with errors, uses stolen work, perpetuates harmful bias, and contributes to global warming.</p>
           </ds-popover>

@@ -264,7 +264,7 @@ export class AppWork {
                             alt="Web page of a full FAQ about yoga and classes offered, with a subtle seedling illustration in the background" />
                     </ds-popover>
 
-                    <p>Feel free to visit the <a href="www.cultivateyogamke.com" target="_blank">live site</a></p>
+                    <p>Feel free to visit the <a href="https://www.cultivateyogamke.com" target="_blank">live site</a></p>
 
                 </ds-card>
 
