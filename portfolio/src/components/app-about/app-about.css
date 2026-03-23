@@ -50,11 +50,3 @@ app-about {
     }
 
 }
-
-.status {
-    background-color: var(--clr-text);
-    color: var(--clr-surface);
-    padding: 1px 5px;
-    white-space: nowrap;
-    border-radius: 2px;
-}
