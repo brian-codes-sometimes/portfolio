@@ -22,7 +22,7 @@ export class AppExperience {
             <li>Knowledge and skills in accessibility guidelines (WCAG)</li>
           </ul>
         </ds-card>
-        <ds-card head="Artisan Partners (contract)" subhead="March 2026 - Current">
+        {/* <ds-card head="Artisan Partners (contract)" subhead="March 2026 - Current">
           <h3>Role(s):</h3>
           <ul>
             <li>Front-End Engineer</li>
@@ -36,7 +36,7 @@ export class AppExperience {
             <li>Set an alarm for the first time in years.</li>
           </ul>
 
-        </ds-card>
+        </ds-card> */}
         <ds-card head="Johnson Controls" subhead="March 2023 - January 2025">
           <h3>Role(s):</h3>
           <ul>
@@ -107,7 +107,7 @@ export class AppExperience {
             <li>Joined DEI group to help improve company policies and hiring practices</li>
           </ul>
         </ds-card>
-        {/* <ds-card class="spacer"></ds-card> */}
+        <ds-card class="spacer"></ds-card>
         <ds-card class="full" head="Education" subhead="University of Wisconsin - Milwaukee">
           <h3>Bachelor of Fine Arts - Design and Visual Communication</h3>
         </ds-card>

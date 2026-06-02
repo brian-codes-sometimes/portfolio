@@ -7,7 +7,7 @@ import { Component, h, Host, State } from '@stencil/core';
 })
 export class AppAbout {
     @State() curEmoji = 0;
-    emojiList: string[] = ["👋", "🪿", "👾", "🤖", "🧔", "🍩", "🚲", "⛺"];
+    emojiList: string[] = ["🏳️‍🌈","👋", "🪿", "👾", "🤖", "🧔", "🍩", "🚲", "⛺"];
 
     swapEmoji() {
         const randomEmoji = Math.floor(Math.random() * this.emojiList.length);
@@ -30,7 +30,7 @@ export class AppAbout {
                             {this.emojiList[this.curEmoji]}
                         </button>
                     </p>
-                    <p>I'm Brian Kingsbury (he/him). I am a parent, a UI/UX developer, and an accessibility advocate based in the Midwest. I tend to collect sketchbooks and note apps, I have watched way too many episodes of This Old House, and am in the process of making various improvements to our 1905 house. Currently, I am working on building pointless little websites and patiently awaiting warmer weather.</p>
+                    <p>I'm Brian Kingsbury (he/him). I am a parent, a UI/UX developer, and an accessibility advocate based in the Midwest. I tend to collect sketchbooks and note apps, I have watched way too many episodes of This Old House, and am in the process of making various improvements to our 1905 house. Currently, I am mending broken bones and enjoying the start of summer.</p>
                 </ds-card>
 
                 <ds-card head="What I do" class="what">

@@ -12,7 +12,7 @@ getAssetPath('assets/*');
 export class AppNav {
   @State() isLightMode: boolean;
   @State() themeChoice: string;
-  // @State() rainbowMode: boolean = false;
+  @State() rainbowMode: boolean = false;
 
 
   toggleMode() {
@@ -32,34 +32,34 @@ export class AppNav {
     localStorage.setItem('theme', this.themeChoice);
   }
 
-  // changeRainbow() {
-  //   this.rainbowMode = !this.rainbowMode;
-  //   if (this.rainbowMode) {
-  //     localStorage.setItem('rainbow', "colorful");
-  //     document.body.classList.add('rainbow');
-  //   }
-  //   else {
-  //     localStorage.removeItem('rainbow');
-  //     document.body.classList.remove('rainbow');
-  //   }
-  // }
+  changeRainbow() {
+    this.rainbowMode = !this.rainbowMode;
+    if (this.rainbowMode) {
+      localStorage.setItem('rainbow', "colorful");
+      document.body.classList.add('rainbow');
+    }
+    else {
+      localStorage.removeItem('rainbow');
+      document.body.classList.remove('rainbow');
+    }
+  }
 
 
   componentWillLoad() {
     var currentTheme = localStorage.getItem('theme');
-    // var currentRainbow = localStorage.getItem('rainbow');
+    var currentRainbow = localStorage.getItem('rainbow');
 
-    // if (currentRainbow) {
-    //   this.rainbowMode = true;
-    //   document.body.classList.add('rainbow');
-    // }
-    // else if (this.rainbowMode) {
-    //   document.body.classList.add('rainbow');
-    // }
-    // else {
-    //   this.rainbowMode = false;
-    //   document.body.classList.remove('rainbow');
-    // }
+    if (currentRainbow) {
+      this.rainbowMode = true;
+      document.body.classList.add('rainbow');
+    }
+    else if (this.rainbowMode) {
+      document.body.classList.add('rainbow');
+    }
+    else {
+      this.rainbowMode = false;
+      document.body.classList.remove('rainbow');
+    }
 
     /* Set theme to stored theme if it exists */
     if (currentTheme) {
@@ -103,13 +103,13 @@ export class AppNav {
                   <i class="lni lni-moon-half-right-5" aria-hidden="true"></i>
                 }
               </button>
-              {/* <div class="rainbow-check">
+              <div class="rainbow-check">
                 <label htmlFor="rainbow">🌈
                   <span class="sr-only">Rainbow mode</span>
                 </label>
                 <input id="rainbow" type="checkbox"
                   onChange={() => this.changeRainbow()} checked={this.rainbowMode} />
-              </div> */}
+              </div>
             </div>
           </div>
         </nav>
